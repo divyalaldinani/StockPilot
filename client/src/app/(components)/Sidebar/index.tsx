@@ -49,13 +49,31 @@ const Sidebar = () => {
     const sidebarClassNames = `fixed flex flex-col ${isSidebarCollapsed ? "w-0 md:w-16" : "w-72 md:w-64" } bg-white transition-all duration-300 overflow-hidden h-full shadow-md z-40`; 
     return (
         <div className={sidebarClassNames}>
-            <div className = {`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSidebarCollapsed ? "px-5" : "px-8"}`}>
-                <div>logo</div>
-                <h1 className={`${isSidebarCollapsed} ? "hidden" : "block"} font-extrabold text-2xl`}>StockPilot</h1>
-                <button className="md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100" onClick={toggleSidebar}>
-                    <Menu className="w-4 h-4"></Menu>
-                </button>
+            
+            <div className={`flex gap-3 justify-between md:justify-normal items-center pt-6 ${isSidebarCollapsed ? "px-3" : "px-8"}`}>
+            {/* Logo Container with Conditional Sizing */}
+            <div className={`${isSidebarCollapsed ? "w-10 h-10" : "w-10 h-10"}`}>
+                <img 
+                src="/logo.png" 
+                alt="Logo" 
+                className="rounded-full w-full h-full object-cover"
+                />
             </div>
+
+            {!isSidebarCollapsed && (
+                <h1 className="font-extrabold text-2xl">StockPilot</h1>
+            )}
+
+            {!isSidebarCollapsed && (
+                <button
+                className="md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100"
+                onClick={toggleSidebar}
+                >
+                <Menu className="w-4 h-4" />
+                </button>
+            )}
+            </div>
+
             {/*Links*/}
             <div className="flex-grow mt-8">
                 <SidebarLink href="\dashboard" icon = {Layout} label = "Dashboard" isCollapsed = {isSidebarCollapsed}></SidebarLink>
