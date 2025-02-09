@@ -3,7 +3,11 @@ import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
 import React from 'react'
 import Link from "next/link";
 import { useAppDispatch, useAppSelector } from "@/app/redux";
+<<<<<<< HEAD
 import { setIsDarkMode, setIsSidebarCollapsed } from "@/app/state";
+=======
+import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
+>>>>>>> b60ca50 (idk)
 import photo from "/photo.jpg";
 
 
