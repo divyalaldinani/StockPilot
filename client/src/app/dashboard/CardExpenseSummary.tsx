@@ -20,7 +20,7 @@ const CardExpenseSummary = () => {
   // console.log("expense summary", dashboardMetrics?.expenseByCategory);
 
   // Update this line to use the property returned by your API.
-  const expenseByCategorySummary = dashboardMetrics?.expenseByCategory || [];
+  const expenseByCategorySummary = dashboardMetrics?.expenseByCategorySummary || [];
 
   console.log("expenseByCategorySummary", expenseByCategorySummary);
   const expenseSums = expenseByCategorySummary.reduce(
