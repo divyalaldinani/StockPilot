@@ -15,7 +15,7 @@ type ProductFormData = {
 }
 
 const Products = () => {
-    const [searchTerm, setSearchTerm ] = useState();
+    const [searchTerm, setSearchTerm ] = useState<string>("");
     const [isModelopen, setIsModelOpen ] = useState(false);
 
     const {data: products, isLoading, isError} = useGetProductsQuery(searchTerm);
