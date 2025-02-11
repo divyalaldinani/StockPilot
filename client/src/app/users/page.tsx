@@ -1,10 +1,6 @@
 "use client";
 
-<<<<<<< HEAD
 import { useGetUsersQuery } from '../state/api';
-=======
-import { useGetUsersQuery } from '../../state/api';
->>>>>>> b60ca50 (idk)
 import Header from '../(components)/Header';
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { Icon } from 'lucide-react';

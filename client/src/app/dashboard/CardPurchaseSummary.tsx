@@ -1,9 +1,6 @@
-import React from 'react'
-<<<<<<< HEAD
-import { useGetDashboardMetricsQuery } from '../state/api'
-=======
-import { useGetDashboardMetricsQuery } from '../../state/api'
->>>>>>> b60ca50 (idk)
+import React from 'react';
+
+import { useGetDashboardMetricsQuery } from '../state/api';
 import numeral from 'numeral';
 import { TrendingDown, TrendingUp } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';

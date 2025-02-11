@@ -1,9 +1,6 @@
-import React from 'react'
-<<<<<<< HEAD
-import { useGetDashboardMetricsQuery } from '../state/api'
-=======
-import { useGetDashboardMetricsQuery } from '../../state/api'
->>>>>>> b60ca50 (idk)
+import React from 'react';
+
+import { useGetDashboardMetricsQuery } from '../state/api';
 import { ShoppingBag } from 'lucide-react';
 import Rating from '../(components)/Rating';
 
