@@ -29,7 +29,7 @@ app.use("/expenses", expenseRoutes);
 
 /* Servers */
 const port = Number(process.env.PORT) || 3001;
-app.listen(port, "0.0.0.0", () => {
+app.listen(8000, () => {
     console.log(`Server running on port ${port}`);
 });
 
