@@ -35,7 +35,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "noEmit": true,
+    "noEmit": false,
     "noImplicitAny": false,
     "esModuleInterop": true,
     "module": "esnext",
