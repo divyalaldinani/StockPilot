@@ -48,7 +48,7 @@ This is a full-stack web application built with modern technologies, designed to
 ### Backend:
 - **Node.js** – Server-side runtime.
 - **Express.js** – Web framework for building API endpoints.
-- **MongoDB** (or other databases) – For data storage and management.
+- **PostgreSQL**– For data storage and management.
 
 ## Folder Structure
 ```
