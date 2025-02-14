@@ -67,7 +67,13 @@ const Products = () => {
                         <div key={product.productId}
                         className="border shadow rounded-md p-4 max-w-full w-full mx-auto">
                             <div className="flex flex-col items-center">
-                                img
+                            <img
+                            src={["/product1.png", "/product2.png", "/product3.png"][Math.floor(Math.random() * 3)]}
+                            alt={product.name}
+                            width={100}
+                            className="rounded-lg w-35 h-auto"
+                        />
+
                                 <h3 className="text-lg text-gray-900 font-semibold">
                                     {product.name}
                                 </h3>
